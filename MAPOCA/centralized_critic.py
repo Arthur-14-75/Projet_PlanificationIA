@@ -1,6 +1,6 @@
 #==== Le but de ce programme est de prendre les observations de tous les agentset de sortir une valeur Q ou V pour chaque agent, tout en tenant compte des actions des autres.
-from observation_encoding import Impala_CNN
-from RSA import RSAModule
+from MAPOCA.observation_encoding import Impala_CNN
+from MAPOCA.RSA import RSAModule
 
 import torch
 import torch.nn as nn
