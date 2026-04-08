@@ -1,8 +1,7 @@
-#from MAPOCA.observation_encoding import Impala_CNN
-#from MAPOCA.RSA import RSAModule
-
-from observation_encoding import Impala_CNN
-from RSA import RSAModule
+try:
+    from MAPOCA.observation_encoding import Impala_CNN
+except ImportError:
+    from observation_encoding import Impala_CNN
 
 import torch
 import torch.nn as nn
