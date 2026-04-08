@@ -1,0 +1,8 @@
+torch
+numpy
+matplotlib
+pillow
+tqdm
+pettingzoo[atari,accept-rom-license]
+AutoROM[accept-rom-license]
+supersuit
