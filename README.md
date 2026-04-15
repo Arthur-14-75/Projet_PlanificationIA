@@ -35,6 +35,7 @@ AutoROM --accept-license
 ```
 Projet_PlanificationIA/
 ├── MAPOCA.ipynb                  # Notebook principal MA-POCA (entraînement + évaluation)
+├── VDN_lancement.ipynb       # Launcher Colab pour VDN
 ├── MAPOCA/
 │   ├── actor.py                  # Politique décentralisée (MultiAgentActors)
 │   ├── centralized_critic.py     # Critique centralisé
@@ -43,8 +44,7 @@ Projet_PlanificationIA/
 │   └── RSA.py                    # Module RSA (Relational Self-Attention)
 ├── VDN/
 │   ├── vdn.py                    # Baseline VDN — CLI complet, récompense brute
-│   ├── vdn_amélioré.py           # VDN étendu — AMP, reward shaping, multi-env
-│   └── VDN_lancement.ipynb       # Launcher Colab pour VDN
+│   └── vdn_amélioré.py           # VDN étendu — AMP, reward shaping, multi-env
 └── requirements.txt
 ```
 
