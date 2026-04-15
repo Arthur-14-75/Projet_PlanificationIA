@@ -392,7 +392,6 @@ def evaluer_ia(modele: ReseauQ, liste_agents: List[str], episodes: int = 5, max_
     print(f"Stats: V:{victoires}, D:{defaites}, N:{nuls}")
 
 def lire_arguments():
-    # Sert à lire les trucs qu'on écrit dans le terminal
     parser = argparse.ArgumentParser(description="IA pour le Hockey sur Atari")
     parser.add_argument("--episodes", type=int, default=500)
     parser.add_argument("--max-steps", type=int, default=1000)
@@ -406,7 +405,7 @@ def lire_arguments():
     args = parser.parse_args()
     config = ConfigEntrainement(
         episodes=args.episodes,
-        max_steps=args.max_steps,
+        max_etapes=args.max_steps,
         lr=args.lr,
         seed=args.seed,
         device=args.device,
