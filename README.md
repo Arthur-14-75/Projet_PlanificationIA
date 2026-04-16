@@ -69,6 +69,20 @@ Exécuter les cellules dans l'ordre. Le notebook :
 
 Pour **reprendre un entraînement**, modifier la cellule de chargement avec le chemin vers le checkpoint `.pth` souhaité avant d'exécuter.
 
+Tous les hyperparamètres sont définis en variables dans la cellule d'entraînement :
+
+```
+LR_ACTOR        Learning rate de l'acteur          (défaut : 1e-4)
+LR_CRITIC       Learning rate du critique           (défaut : 3e-4)
+GAMMA           Facteur de discount                 (défaut : 0.99)
+LMBDA           Paramètre lambda des retours GAE    (défaut : 0.95)
+BATCH_SIZE      Pas de temps par mise à jour        (défaut : 128)
+TOTAL_EPISODES  Nombre total d'épisodes             (défaut : 11000)
+DECAY_EPISODES  Épisodes sur lesquels alpha décroît (défaut : 3000)
+START_ALPHA     Valeur initiale d'alpha (entropie)  (défaut : 1.0)
+END_ALPHA       Valeur finale d'alpha (entropie)    (défaut : 0.5)
+```
+
 ### Sur Google Colab
 
 Uploader le dossier sur Google Drive, puis ouvrir `MAPOCA.ipynb` directement dans Colab. Les chemins de checkpoints sont configurables dans les cellules dédiées.
